@@ -1,5 +1,6 @@
 <script>
 import About from "./components/About.svelte";
+import Input from "./components/Input.svelte";
 import Person from "./components/Person.svelte";
 import Skills from "./components/Skills.svelte";
 import Text from "./components/Text.svelte";
@@ -58,5 +59,6 @@ const data = {
 	<Text />
 	<Person {...data}  />
 	<Skills />
+	<Input />
 	<img src={svelteLogo} alt="Svelte">
 </main>
