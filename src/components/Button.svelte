@@ -1,5 +1,5 @@
 <script>
-  export let count;
+  export let count = 0;
   export let text;
 </script>
 
