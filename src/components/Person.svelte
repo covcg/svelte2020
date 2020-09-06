@@ -5,5 +5,5 @@
 </script>
 
 <div class="Person">
-  <p>{name} {lastname}, {age} año{age > 1 ? 's' : 'o'}</p>
+  <p>{name} {lastname}, {age} year{age > 1 ? 's' : 'o'} old</p>
 </div>
