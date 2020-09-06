@@ -1,14 +1,28 @@
 <script>
-	export let name;
-	export let lastname;
+import About from "./components/About.svelte";
+import Person from "./components/Person.svelte";
+import Text from "./components/Text.svelte";
+export let name;
+export let lastname;
+let svelteLogo = "https://svelte.dev/svelte-logo-horizontal.svg";
+
+const data = {
+	name: "Carlos Guillermo",
+	lastname: "Coello Valenzuela",
+	age: 25
+}
 </script>
 
-<main>
-	<h1>Hello {name} {lastname}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
+	:global(body) {
+		background-color: #f2eee2;
+		color: #0084f6;
+	}
+
+	:global(:root) {
+		--theme-color: purple;
+	}
+
 	main {
 		text-align: center;
 		padding: 1em;
@@ -29,3 +43,12 @@
 		}
 	}
 </style>
+
+<main>
+	<h1>Hello {name} {lastname}!</h1>
+	<About />
+	<Text anotherText="Hola!" />
+	<Text />
+	<Person {...data}  />
+	<img src={svelteLogo} alt="Svelte">
+</main>
