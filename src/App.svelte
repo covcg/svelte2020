@@ -1,9 +1,12 @@
 <script>
 import About from "./components/About.svelte";
 import Person from "./components/Person.svelte";
+import Skills from "./components/Skills.svelte";
 import Text from "./components/Text.svelte";
+
 export let name;
 export let lastname;
+
 let svelteLogo = "https://svelte.dev/svelte-logo-horizontal.svg";
 
 const data = {
@@ -54,5 +57,6 @@ const data = {
 	<Text anotherText="Hola!" />
 	<Text />
 	<Person {...data}  />
+	<Skills />
 	<img src={svelteLogo} alt="Svelte">
 </main>

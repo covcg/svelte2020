@@ -26,6 +26,10 @@
   {:else}
     <p>Hello dark mode!</p>
   {/if}
-  <button on:click={handleClick}>Click {count === 0 ? '' : count}</button>
-  <button on:click={toggleDarkMode}>Dark Mode {styles.darkMOde ? 'Active' : 'Inactive'}</button>
+  <button on:click={handleClick}>
+    Click {count === 0 ? '' : count}
+  </button>
+  <button on:click={toggleDarkMode}>
+    Dark Mode {styles.darkMOde ? 'Active' : 'Inactive'}
+  </button>
 </div>
