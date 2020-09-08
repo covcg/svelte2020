@@ -9,11 +9,11 @@
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Pacifico&display=swap');
 
   :global(body) {
-    background-color: #fafafa;
-    color: rgba(38, 38, 38, .7);
     font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fafafa;
+    color: rgba(38, 38, 38, .7);
   }
   :global(h1, h2, h3) {
     margin: 0;

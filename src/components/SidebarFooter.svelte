@@ -1,3 +1,5 @@
+<script></script>
+
 <style>
   .SidebarFooter {
     font-size: 11px;
