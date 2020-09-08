@@ -1,4 +1,19 @@
-<script></script>
+<script>
+	export let comments;
+	function addComment(event) {
+		const msg = event.target.text.value;
+		console.log(msg.length);
+		if (msg.length > 3)  {
+			const message = {
+				id: Date.now(),
+				text: msg,
+				username: "covcg"
+			};
+			comments = [...comments, message];
+			event.target.text.value = "";
+		}
+	}
+</script>
 
 <style>
   .Comments h3 {
@@ -55,12 +70,14 @@
 
 <div class="Comments">
   <div class="Comments-container">
-    <div class="Comments-users">
-      <h3>Crispeta</h3>
-      <span>Hola elmo</span>
-    </div>
+		{#each comments as comment}
+			<div class="Comments-users">
+				<h3>{comment.username}</h3>
+				<span>{comment.text}</span>
+			</div>
+		{/each}
     <div class="Comments-add">
-      <form>
+      <form on:submit|preventDefault={addComment}>
         <input
           class="Comments-input"
           type="text"

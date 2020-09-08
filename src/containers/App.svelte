@@ -9,7 +9,7 @@ import Comments from '../components/Comments.svelte';
 import Profile from '../components/Profile.svelte';
 
 	let data = {};
-	const API = "https://us-central1-pustagram-co.cloudfunctions.net/data"
+	const API = "https://us-central1-pugstagram-co.cloudfunctions.net/data"
 
 	onMount(async () => {
 		const response = await fetch(API);

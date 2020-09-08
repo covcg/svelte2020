@@ -2,7 +2,7 @@
 import App from '../containers/App.svelte';
 import Card from './Card.svelte';
 import Comments from './Comments.svelte';
-export let posts;
+export let posts = [];
 </script>
 
 <style>
